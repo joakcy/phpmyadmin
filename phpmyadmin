@@ -53,7 +53,7 @@ Alias /phpmyadmin /usr/share/phpmyadmin
 </Directory>
 <Directory /usr/share/phpmyadmin/setup/lib>
     Require all denied
-</Directory>" | sudo tee /etc/apache2/conf-available/phpmyadmin.conf;
+</Directory>" | tee /etc/apache2/conf-available/phpmyadmin.conf;
 
 # Create temp folder.
 mkdir -p /var/lib/phpmyadmin/tmp;
