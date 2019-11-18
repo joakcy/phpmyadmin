@@ -58,4 +58,4 @@ Alias /phpmyadmin /usr/share/phpmyadmin
 # Create temp folder.
 mkdir -p /var/lib/phpmyadmin/tmp;
 chown www-data:www-data /var/lib/phpmyadmin/tmp;
-a2enconf phpmyadmin.conf && sudo systemctl reload apache2;
+a2enconf phpmyadmin.conf && systemctl reload apache2;
